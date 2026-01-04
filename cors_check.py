@@ -115,7 +115,7 @@ def main():
             color = Colors.RED if issue['severity'] in ['critical', 'high'] else Colors.YELLOW
             print(f"  {color}[{issue['severity'].upper()}]{Colors.RESET} {issue['issue']}")
     else:
-        print(f"\n{Colors.GREEN}✓ No CORS issues found{Colors.RESET}")
+        print(f"\n{Colors.GREEN}[OK] No CORS issues found{Colors.RESET}")
 
 
 if __name__ == "__main__":
